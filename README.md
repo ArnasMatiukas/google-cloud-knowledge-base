@@ -3,7 +3,12 @@
 ## Gemini CLI
 Gemini CLI is an interactive command-line interface agent specializing in software engineering tasks, enabling developers to write code, execute commands, and manage projects directly from the terminal.
 
-**Source:** [GitHub Repository](https://github.com/google-gemini/gemini-cli) | [Web Version](https://gemini.google.com/)
+**Source:** [GitHub Repository](https://github.com/google-gemini/gemini-cli) | [Web Version](https://geminicli.com/)
+
+## Agent Development Kit (ADK)
+The Agent Development Kit (ADK) is a framework from Google designed to help developers build powerful multi-agent systems and accelerate the AI agent development process.
+
+**Source:** [Official Website](https://google.github.io/adk-docs/) | [GitHub Repository](https://github.com/google/adk-python) | [ADK Samples](https://github.com/google/adk-samples)
 
 ## Community Gemini Quick Starts
 
@@ -21,6 +26,13 @@ A highly popular template toolkit for AI agents that provides ready-to-use skill
 A comprehensive extension kit tailored for the Gemini CLI featuring numerous pre-configured AI agents and commands for automated planning, testing, and security reviews.
 
 **Source:** [https://github.com/nth5693/gemini-kit](https://github.com/nth5693/gemini-kit)
+
+## Google Workspace Integrations
+
+### Gemini CLI Workspace Extension
+A dedicated extension for the Gemini CLI that leverages a local MCP server, allowing AI agents to securely query and interact with personal Google Workspace data like emails and calendars via natural language.
+
+**Source:** [https://github.com/gemini-cli-extensions/workspace](https://github.com/gemini-cli-extensions/workspace)
 
 ## Google Cloud Local MCP Servers
 
