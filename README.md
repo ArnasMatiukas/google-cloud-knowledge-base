@@ -54,6 +54,11 @@ Google BigQuery is a unified, AI-ready data platform that handles multimodal dat
 
 **Source:** [Official Website](https://cloud.google.com/bigquery) | [Documentation](https://cloud.google.com/bigquery/docs)
 
+## Google AI Studio
+Google AI Studio provides the simplest way to consume all Gemini models via API. To get started, simply import your GCP project and generate an API key within the corresponding project in the AI Studio UI.
+
+**Source:** [Official Website](https://aistudio.google.com/) | [Documentation](https://ai.google.dev/docs)
+
 ## Google Cloud Local MCP Servers
 
 ### Cloud Run MCP
