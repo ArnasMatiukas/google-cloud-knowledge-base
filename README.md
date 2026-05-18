@@ -6,9 +6,19 @@ Gemini CLI is an interactive command-line interface agent specializing in softwa
 **Source:** [GitHub Repository](https://github.com/google-gemini/gemini-cli) | [Web Version](https://geminicli.com/)
 
 ## Agent Development Kit (ADK)
-The Agent Development Kit (ADK) is a framework from Google designed to help developers build powerful multi-agent systems and accelerate the AI agent development process.
+The Agent Development Kit (ADK) is a framework from Google designed to help developers build powerful multi-agent systems. To build efficiently, you can leverage pre-built AI skills and a documentation index to seamlessly fetch the most up-to-date docs and coding patterns.
 
-**Source:** [Official Website](https://google.github.io/adk-docs/) | [GitHub Repository](https://github.com/google/adk-python) | [ADK Samples](https://github.com/google/adk-samples)
+**Source:** [Official Website](https://google.github.io/adk-docs/) | [GitHub Repository](https://github.com/google/adk-python) | [ADK Samples](https://github.com/google/adk-samples) | [Coding with AI](https://adk.dev/tutorials/coding-with-ai/#gemini-cli)
+
+## A2UI (Agent-to-User Interface)
+A2UI is an open-source declarative JSON standard and framework that allows AI agents to securely generate and incrementally update rich, interactive user interfaces across different platforms.
+
+**Source:** [https://github.com/google/a2ui](https://github.com/google/a2ui)
+
+## Google Developer Knowledge API
+The Google Developer Knowledge API enables AI agents to automatically search and retrieve answers from official Google Cloud documentation. This is extremely useful for developers needing instant, accurate guidance on how to use GCP services and APIs.
+
+**Source:** [Documentation](https://developers.google.com/knowledge/api)
 
 ## Community Gemini Quick Starts
 
@@ -33,6 +43,16 @@ A comprehensive extension kit tailored for the Gemini CLI featuring numerous pre
 A dedicated extension for the Gemini CLI that leverages a local MCP server, allowing AI agents to securely query and interact with personal Google Workspace data like emails and calendars via natural language.
 
 **Source:** [https://github.com/gemini-cli-extensions/workspace](https://github.com/gemini-cli-extensions/workspace)
+
+## Google Cloud Run
+Google Cloud Run is a fully managed serverless compute platform that allows you to quickly deploy scalable, containerized applications. It eliminates infrastructure management, providing a fast and simple hosting solution for rapid development.
+
+**Source:** [Official Website](https://cloud.google.com/run) | [Documentation](https://cloud.google.com/run/docs)
+
+## Google BigQuery
+Google BigQuery is a unified, AI-ready data platform that handles multimodal data—including text, voice, images, and audio—perfect for powering advanced AI applications. It features built-in integration with Gemini models, enabling seamless data enrichment and analysis directly through standard SQL.
+
+**Source:** [Official Website](https://cloud.google.com/bigquery) | [Documentation](https://cloud.google.com/bigquery/docs)
 
 ## Google Cloud Local MCP Servers
 
