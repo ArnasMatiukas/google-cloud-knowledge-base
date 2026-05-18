@@ -55,7 +55,7 @@ Google BigQuery is a unified, AI-ready data platform that handles multimodal dat
 **Source:** [Official Website](https://cloud.google.com/bigquery) | [Documentation](https://cloud.google.com/bigquery/docs)
 
 ## Google AI Studio
-Google AI Studio provides the simplest way to consume all Gemini models via API. To get started, simply import your GCP project and generate an API key within the corresponding project in the AI Studio UI.
+Google AI Studio provides the simplest way to consume all Gemini models via API. To get started, simply import your GCP project and generate an API key within the corresponding project in the AI Studio UI. *Note: AI Studio is a lightweight version of the Google Cloud Agent Platform, which is built for business use and provides deeper ecosystem integration ("AI Studio on steroids").*
 
 **Source:** [Official Website](https://aistudio.google.com/) | [Documentation](https://ai.google.dev/docs)
 
