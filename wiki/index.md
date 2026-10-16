@@ -3,7 +3,7 @@
 > Auto-generated progressive disclosure catalog compliant with Open Knowledge Format (OKF v0.2). Last updated: 2026-10-16
 
 ## Overview
-Total concepts documented: **16** across **8** categories.
+Total concepts documented: **19** across **8** categories.
 
 ### 1. Onboarding & Setup
 
@@ -24,8 +24,11 @@ Total concepts documented: **16** across **8** categories.
 
 | Concept | Type | Description | Tags |
 | :--- | :--- | :--- | :--- |
+| [ADK 2.0 Graph Workflows, Human-in-the-Loop (HITL) & Pause/Resume](concepts/adk_graph_workflows_and_hitl.md) | `Architecture` | How to build deterministic, stateful multi-step processes in ADK 2.0 using Graph-based Workflows (Workflow, edges), Human Input nodes (RequestInput), Tool Confirmations (require_confirmation), and ResumabilityConfig. | adk, graphs, workflow, hitl, human-in-the-loop, confirmation, resume, state-machine |
 | [Agent Development Kit (ADK 2.0) & Official ADK Skills](concepts/agent_development_kit_adk_and_skills.md) | `Guide` | Complete guide to Google's Agent Development Kit (ADK 2.0) on Vertex AI: LlmAgent, workflow orchestrators, where to find and install official ADK coding skills (google-agents-cli, adk.dev/llms.txt), and runtime SkillToolset. | adk, agents, skills, skill-toolset, google-agents-cli, llms-txt, multi-agent |
 | [Agentic Protocols: MCP & A2A](concepts/protocols_mcp_and_a2a.md) | `Concept` | How Model Context Protocol (MCP) and the Agent2Agent (A2A) protocol work together on Google Cloud to connect agents to tools, databases, and remote specialist agents. | mcp, a2a, agent2agent, protocols, interoperability, adk, streamable-http |
+| [Custom Frontend UI & Real-Time Agent Streaming (adk api_server, SSE & AG-UI)](concepts/agent_frontend_streaming_ag_ui.md) | `Guide` | How to connect custom React, Next.js, or Vite web frontends to ADK 2.0 agents on Vertex AI using the built-in ADK REST/SSE API Server (adk api_server / /run_sse) or the AG-UI protocol and CopilotKit. | frontend, streaming, sse, ag-ui, copilotkit, api-server, react, adk |
+| [One-Command PoC Scaffolding: Agents CLI, Starter Pack & ADK Samples](concepts/poc_scaffolding_agents_cli_and_templates.md) | `Guide` | How to bootstrap full-stack, deployable Google Cloud multi-agent PoCs in under 60 seconds using Google Agents CLI (google-agents-cli), Agent Starter Pack, and official ADK Samples & Recipes. | agents-cli, agent-starter-pack, adk-samples, scaffolding, poc, cloud-run, agent-engine |
 | [Vertex AI Agent Engine (Managed Agent Runtime)](concepts/vertex_ai_agent_engine.md) | `Architecture` | Deploying and scaling ADK and custom agents on Google Cloud's managed Vertex AI Agent Engine (ReasoningEngine) with managed Sessions, long-term Memory Bank, Code Execution Sandbox, and Cloud Trace. | agent-engine, reasoning-engine, vertex-ai, sessions, memory-bank, opentelemetry, adk |
 
 ### 4. Compute & Hosting

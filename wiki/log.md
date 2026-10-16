@@ -16,3 +16,9 @@ Chronological history of knowledge additions, updates, and distillations.
 - Concept page: `[concepts/gcp_mcp_servers_catalog.md](concepts/gcp_mcp_servers_catalog.md)`
 - Concept page: `[concepts/protocols_mcp_and_a2a.md](concepts/protocols_mcp_and_a2a.md)`
 
+### [2026-10-16 12:51:04 UTC] Added PoC Scaffolding, ADK 2.0 Graph Workflows/HITL, and Frontend Streaming Guides
+- Added 3 new OKF concept pages covering one-command PoC scaffolding (google-agents-cli, agent-starter-pack, adk-samples), ADK 2.0 Graph Workflows with Human-in-the-Loop (RequestInput, require_confirmation, ResumabilityConfig), and custom frontend streaming (adk api_server /run_sse and AG-UI / CopilotKit).
+- Concept page: `[concepts/poc_scaffolding_agents_cli_and_templates.md](concepts/poc_scaffolding_agents_cli_and_templates.md)`
+- Concept page: `[concepts/adk_graph_workflows_and_hitl.md](concepts/adk_graph_workflows_and_hitl.md)`
+- Concept page: `[concepts/agent_frontend_streaming_ag_ui.md](concepts/agent_frontend_streaming_ag_ui.md)`
+

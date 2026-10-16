@@ -60,7 +60,7 @@ This repository includes a 3-layer **Open Knowledge Format (OKF v0.2) LLM Wiki**
 
 - **Onboarding & Setup:** [Google Cloud CLI & Project Access Setup](wiki/concepts/gcp_cli_and_project_setup.md) | [Antigravity 2.0 PayGo & IDE Setup](wiki/concepts/antigravity_2_paygo_and_ide_setup.md)
 - **Models & SDKs (Single Latest Model Per Tier):** [Agent Platform Latest Models Catalog](wiki/concepts/agent_platform_models.md) | [Google GenAI SDK on Vertex AI](wiki/concepts/google_genai_sdk_vertex.md) | [Gemini Embedding 2 (Multimodal Embeddings)](wiki/concepts/gemini_embedding_2_multimodal.md)
-- **Agentic Frameworks & Skills:** [Agent Development Kit (ADK 2.0) & Official ADK Skills](wiki/concepts/agent_development_kit_adk_and_skills.md) | [Vertex AI Agent Engine](wiki/concepts/vertex_ai_agent_engine.md) | [Agentic Protocols: MCP & A2A](wiki/concepts/protocols_mcp_and_a2a.md)
+- **Agentic Frameworks & Skills:** [Agent Development Kit (ADK 2.0) & Official ADK Skills](wiki/concepts/agent_development_kit_adk_and_skills.md) | [One-Command PoC Scaffolding (`agents-cli` & Starter Pack)](wiki/concepts/poc_scaffolding_agents_cli_and_templates.md) | [ADK 2.0 Graph Workflows & Human-in-the-Loop (HITL)](wiki/concepts/adk_graph_workflows_and_hitl.md) | [Custom Frontend UI & Real-Time Streaming (`adk api_server` & `AG-UI`)](wiki/concepts/agent_frontend_streaming_ag_ui.md) | [Vertex AI Agent Engine](wiki/concepts/vertex_ai_agent_engine.md) | [Agentic Protocols: MCP & A2A](wiki/concepts/protocols_mcp_and_a2a.md)
 - **Compute, Data & Storage:** [Google Cloud Run: Serverless Containers & GPUs](wiki/concepts/cloud_run_serverless_and_gpus.md) | [Google BigQuery: AI & Analytics](wiki/concepts/bigquery_ai_and_analytics.md) | [Operational Data Stores: Spanner, AlloyDB, Cloud SQL, Firestore & GCS](wiki/concepts/datastores_cloudsql_alloydb_spanner_firestore_gcs.md)
 - **RAG, GraphRAG & Multimodal:** [RAG, Grounding & Search on Google Cloud](wiki/concepts/rag_grounding_and_search.md) | [How to Build GraphRAGs on Google Cloud](wiki/concepts/graphrag_architectures_on_gcp.md) | [Multimodal Live API, Voice, Image & Video](wiki/concepts/multimodal_live_voice_and_media.md)
 - **MCP Ecosystem & Guardrails:** [Google Cloud MCP Servers Catalog](wiki/concepts/gcp_mcp_servers_catalog.md) | [Security, FinOps & Quota Guardrails](wiki/concepts/security_finops_and_quotas.md)
@@ -108,6 +108,21 @@ Gemini Embedding 2 is Google Cloud's native multimodal embedding model that maps
 The Agent Development Kit (ADK) is Google's framework for building, evaluating, and deploying multi-agent systems. You can install official ADK coding skills into Antigravity 2.0 via `uvx google-agents-cli setup`, connect to `https://adk.dev/llms.txt`, and equip runtime agents with modular `SKILL.md` folders via `SkillToolset`.
 
 **Source:** [Official Website](https://adk.dev/) | [Coding with AI & ADK CLI Skills](https://adk.dev/tutorials/coding-with-ai/) | [Runtime Skills for ADK Agents](https://adk.dev/skills/) | [Agents CLI](https://google.github.io/agents-cli/) | [ADK Python](https://github.com/google/adk-python) | [ADK Recipes](https://github.com/google/adk-recipes)
+
+### One-Command PoC Scaffolding (`google-agents-cli`, `agent-starter-pack` & `adk-samples`)
+Bootstrap full-stack, deployable Google Cloud multi-agent PoCs in under 60 seconds using `uvx google-agents-cli setup` (`agents-cli scaffold enhance` / `agents-cli deploy`), `uvx agent-starter-pack create`, or official vertical reference architectures in `google/adk-samples`.
+
+**Source:** [Agents CLI Quickstart](https://adk.dev/get-started/agents-cli/) | [Agent Starter Pack](https://googlecloudplatform.github.io/agent-starter-pack/) | [ADK Samples Repository](https://github.com/google/adk-samples) | [Local PoC Scaffolding Guide](wiki/concepts/poc_scaffolding_agents_cli_and_templates.md)
+
+### ADK 2.0 Graph Workflows, Human-in-the-Loop (HITL) & Pause/Resume
+ADK 2.0's `Workflow` graph runtime lets you combine Python functions, LLM `Agent` nodes, and conditional routing edges with deterministic Human-in-the-Loop pauses (`RequestInput`), tool confirmations (`FunctionTool(..., require_confirmation=True)`), and checkpoint resumption (`ResumabilityConfig`).
+
+**Source:** [ADK Graph Workflows](https://adk.dev/graphs/) | [Human Input Nodes](https://adk.dev/graphs/human-input/) | [Tool Confirmations](https://adk.dev/tools-custom/confirmation/) | [Resume Stopped Agents](https://adk.dev/runtime/resume/) | [Local Graph & HITL Guide](wiki/concepts/adk_graph_workflows_and_hitl.md)
+
+### Custom Frontend UI & Real-Time Agent Streaming (`adk api_server` & `AG-UI` / `CopilotKit`)
+Connect custom React, Next.js, or Vite web frontends to ADK 2.0 agents using either the built-in REST + Server-Sent Events server (`adk api_server` on `/run_sse`) or the open `AG-UI` protocol (`ag-ui-adk`) and `CopilotKit` for live tool-call cards and shared state.
+
+**Source:** [ADK API Server](https://adk.dev/runtime/api-server/) | [AG-UI Integration](https://adk.dev/integrations/ag-ui/) | [CopilotKit Integration](https://adk.dev/integrations/copilotkit/) | [Local Frontend Streaming Guide](wiki/concepts/agent_frontend_streaming_ag_ui.md)
 
 ### Vertex AI Agent Engine
 Vertex AI Agent Engine (`ReasoningEngine`) is a fully managed runtime on Google Cloud Agent Platform for deploying ADK and custom agents with managed sessions (`VertexAiSessionService`), long-term Memory Bank, code execution sandboxes, and OpenTelemetry tracing.

@@ -1,6 +1,33 @@
 {
   "version": "0.2",
   "concepts": {
+    "adk_graph_workflows_and_hitl": {
+      "slug": "adk_graph_workflows_and_hitl",
+      "title": "ADK 2.0 Graph Workflows, Human-in-the-Loop (HITL) & Pause/Resume",
+      "type": "Architecture",
+      "category": "3. Agentic Frameworks",
+      "tags": [
+        "adk",
+        "graphs",
+        "workflow",
+        "hitl",
+        "human-in-the-loop",
+        "confirmation",
+        "resume",
+        "state-machine"
+      ],
+      "description": "How to build deterministic, stateful multi-step processes in ADK 2.0 using Graph-based Workflows (Workflow, edges), Human Input nodes (RequestInput), Tool Confirmations (require_confirmation), and ResumabilityConfig.",
+      "aliases": [
+        "ADK Graph Workflows",
+        "Human-in-the-Loop ADK",
+        "Tool Confirmation",
+        "Resumable Agents"
+      ],
+      "resource": "https://adk.dev/graphs/",
+      "path": "concepts/adk_graph_workflows_and_hitl.md",
+      "rel_path": "concepts/adk_graph_workflows_and_hitl.md",
+      "last_updated": "2026-10-16T12:48:00Z"
+    },
     "agent_development_kit_adk_and_skills": {
       "slug": "agent_development_kit_adk_and_skills",
       "title": "Agent Development Kit (ADK 2.0) & Official ADK Skills",
@@ -27,6 +54,33 @@
       "path": "concepts/agent_development_kit_adk_and_skills.md",
       "rel_path": "concepts/agent_development_kit_adk_and_skills.md",
       "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "agent_frontend_streaming_ag_ui": {
+      "slug": "agent_frontend_streaming_ag_ui",
+      "title": "Custom Frontend UI & Real-Time Agent Streaming (adk api_server, SSE & AG-UI)",
+      "type": "Guide",
+      "category": "3. Agentic Frameworks",
+      "tags": [
+        "frontend",
+        "streaming",
+        "sse",
+        "ag-ui",
+        "copilotkit",
+        "api-server",
+        "react",
+        "adk"
+      ],
+      "description": "How to connect custom React, Next.js, or Vite web frontends to ADK 2.0 agents on Vertex AI using the built-in ADK REST/SSE API Server (adk api_server / /run_sse) or the AG-UI protocol and CopilotKit.",
+      "aliases": [
+        "ADK API Server",
+        "AG-UI for ADK",
+        "CopilotKit ADK",
+        "Agent SSE Streaming"
+      ],
+      "resource": "https://adk.dev/runtime/api-server/",
+      "path": "concepts/agent_frontend_streaming_ag_ui.md",
+      "rel_path": "concepts/agent_frontend_streaming_ag_ui.md",
+      "last_updated": "2026-10-16T12:48:00Z"
     },
     "agent_platform_models": {
       "slug": "agent_platform_models",
@@ -320,6 +374,32 @@
       "rel_path": "concepts/multimodal_live_voice_and_media.md",
       "last_updated": "2026-10-16T10:25:00Z"
     },
+    "poc_scaffolding_agents_cli_and_templates": {
+      "slug": "poc_scaffolding_agents_cli_and_templates",
+      "title": "One-Command PoC Scaffolding: Agents CLI, Starter Pack & ADK Samples",
+      "type": "Guide",
+      "category": "3. Agentic Frameworks",
+      "tags": [
+        "agents-cli",
+        "agent-starter-pack",
+        "adk-samples",
+        "scaffolding",
+        "poc",
+        "cloud-run",
+        "agent-engine"
+      ],
+      "description": "How to bootstrap full-stack, deployable Google Cloud multi-agent PoCs in under 60 seconds using Google Agents CLI (google-agents-cli), Agent Starter Pack, and official ADK Samples & Recipes.",
+      "aliases": [
+        "Agents CLI",
+        "Agent Starter Pack",
+        "ADK Samples",
+        "PoC Scaffolding"
+      ],
+      "resource": "https://adk.dev/get-started/agents-cli/",
+      "path": "concepts/poc_scaffolding_agents_cli_and_templates.md",
+      "rel_path": "concepts/poc_scaffolding_agents_cli_and_templates.md",
+      "last_updated": "2026-10-16T12:48:00Z"
+    },
     "protocols_mcp_and_a2a": {
       "slug": "protocols_mcp_and_a2a",
       "title": "Agentic Protocols: MCP & A2A",
@@ -426,5 +506,5 @@
       "last_updated": "2026-10-16T10:25:00Z"
     }
   },
-  "last_synced": "2026-10-16T12:37:03.455510+00:00"
+  "last_synced": "2026-10-16T12:51:04.229959+00:00"
 }

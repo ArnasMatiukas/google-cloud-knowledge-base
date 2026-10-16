@@ -173,6 +173,9 @@ adk web --allow_origins="*" --host 127.0.0.1 --port 8000 .
 
 ## Related Concepts
 
+- [One-Command PoC Scaffolding: Agents CLI, Starter Pack & ADK Samples](poc_scaffolding_agents_cli_and_templates.md) — Bootstrapping full-stack ADK 2.0 projects in under 60 seconds.
+- [ADK 2.0 Graph Workflows, Human-in-the-Loop (HITL) & Pause/Resume](adk_graph_workflows_and_hitl.md) — Declarative `Workflow` graphs, `RequestInput`, `require_confirmation`, and `ResumabilityConfig`.
+- [Custom Frontend UI & Real-Time Agent Streaming (`adk api_server`, SSE & `AG-UI`)](agent_frontend_streaming_ag_ui.md) — Connecting React/Next.js frontends to ADK agents via `/run_sse` and `AG-UI` / `CopilotKit`.
 - [Vertex AI Agent Engine (Managed Runtime)](vertex_ai_agent_engine.md) — Deploying ADK agents to managed `ReasoningEngine` with Sessions and Memory Bank.
 - [Cloud Run Serverless & GPUs](cloud_run_serverless_and_gpus.md) — Deploying ADK agents to Cloud Run via `adk deploy cloud_run`.
 - [Agentic Protocols: MCP & A2A](protocols_mcp_and_a2a.md) — Connecting ADK agents to MCP servers (`McpToolset`) and remote A2A agents (`RemoteA2aAgent`).
