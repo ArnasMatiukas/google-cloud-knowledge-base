@@ -107,4 +107,4 @@ FROM VECTOR_SEARCH(
 - [How to Build GraphRAGs on Google Cloud](graphrag_architectures_on_gcp.md) — Using BigQuery `AI.GENERATE_TABLE` + `VECTOR_SEARCH` for serverless analytical GraphRAG.
 - [Gemini Embedding 2 (Multimodal Embeddings)](gemini_embedding_2_multimodal.md) — Embedding text, images, audio, video, and PDFs.
 - [Operational Data Stores: Spanner, AlloyDB, Cloud SQL, Firestore & GCS](datastores_cloudsql_alloydb_spanner_firestore_gcs.md) — Choosing between analytical (BigQuery) and transactional data stores.
-- [Google Cloud MCP Servers Catalog](gcp_mcp_servers_catalog.md) — Connecting agents to BigQuery via the hosted BigQuery Remote MCP or `mcp-toolbox`.
+- [Google Cloud Native Integrated & Local MCP Servers](gcp_mcp_servers_catalog.md) — Connecting agents directly to BigQuery via its native remote MCP endpoint (`https://bigquery.googleapis.com/mcp`).

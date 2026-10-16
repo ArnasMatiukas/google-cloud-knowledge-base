@@ -190,29 +190,30 @@
     },
     "gcp_mcp_servers_catalog": {
       "slug": "gcp_mcp_servers_catalog",
-      "title": "Google Cloud MCP Servers Catalog (Local & Remote)",
+      "title": "Google Cloud Native Integrated & Local MCP Servers",
       "type": "Tool",
       "category": "8. MCP & Guardrails",
       "tags": [
         "mcp",
+        "remote-mcp",
+        "bigquery-mcp",
+        "spanner-mcp",
         "cloud-run-mcp",
         "gcloud-mcp",
-        "mcp-toolbox",
         "developer-knowledge",
-        "remote-mcp",
         "adk-docs"
       ],
-      "description": "Complete catalog and configuration guide for Google Cloud Local MCP Servers (cloud-run-mcp, gcloud-mcp, gke-mcp, mcp-toolbox), Official ADK Docs MCP, and Google Cloud Hosted Remote MCP Servers.",
+      "description": "Complete endpoint catalog and step-by-step connection guide for Google Cloud Native Integrated (Remote) MCP Servers (BigQuery, Spanner, AlloyDB, Cloud SQL, Firestore, Cloud Run, GKE, Logging) and Local CLI MCP Servers.",
       "aliases": [
         "Google Cloud MCP",
         "Remote MCP Servers",
-        "MCP Toolbox",
+        "Native Integrated MCP",
         "cloud-run-mcp"
       ],
       "resource": "https://docs.cloud.google.com/mcp/supported-products",
       "path": "concepts/gcp_mcp_servers_catalog.md",
       "rel_path": "concepts/gcp_mcp_servers_catalog.md",
-      "last_updated": "2026-10-16T10:25:00Z"
+      "last_updated": "2026-10-16T11:52:00Z"
     },
     "gemini_embedding_2_multimodal": {
       "slug": "gemini_embedding_2_multimodal",
@@ -425,5 +426,5 @@
       "last_updated": "2026-10-16T10:25:00Z"
     }
   },
-  "last_synced": "2026-10-16T10:40:09.898052+00:00"
+  "last_synced": "2026-10-16T11:54:16.699360+00:00"
 }

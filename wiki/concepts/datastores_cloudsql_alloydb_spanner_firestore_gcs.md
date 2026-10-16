@@ -78,4 +78,4 @@ CREATE INDEX ON knowledge_chunks USING hnsw (embedding vector_cosine_ops);
 - [How to Build GraphRAGs on Google Cloud](graphrag_architectures_on_gcp.md) — Combining Spanner Graph, AlloyDB/Cloud SQL `pgvector`, or BigQuery with `gemini-embedding-2`.
 - [BigQuery AI & Analytics](bigquery_ai_and_analytics.md) — Serverless analytical queries and `VECTOR_SEARCH`.
 - [RAG, Grounding & Search on Google Cloud](rag_grounding_and_search.md) — End-to-end RAG decision framework.
-- [Google Cloud MCP Servers Catalog](gcp_mcp_servers_catalog.md) — Connecting agents to Spanner, AlloyDB, Cloud SQL, and Firestore via MCP Toolbox.
+- [Google Cloud Native Integrated & Local MCP Servers](gcp_mcp_servers_catalog.md) — Connecting agents directly to Spanner (`https://spanner.googleapis.com/mcp`), AlloyDB (`https://alloydb.googleapis.com/mcp`), Cloud SQL (`https://sqladmin.googleapis.com/mcp`), and Firestore (`https://firestore.googleapis.com/mcp`) via native remote MCP endpoints.

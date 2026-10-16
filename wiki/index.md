@@ -58,7 +58,7 @@ Total concepts documented: **16** across **8** categories.
 
 | Concept | Type | Description | Tags |
 | :--- | :--- | :--- | :--- |
-| [Google Cloud MCP Servers Catalog (Local & Remote)](concepts/gcp_mcp_servers_catalog.md) | `Tool` | Complete catalog and configuration guide for Google Cloud Local MCP Servers (cloud-run-mcp, gcloud-mcp, gke-mcp, mcp-toolbox), Official ADK Docs MCP, and Google Cloud Hosted Remote MCP Servers. | mcp, cloud-run-mcp, gcloud-mcp, mcp-toolbox, developer-knowledge, remote-mcp, adk-docs |
+| [Google Cloud Native Integrated & Local MCP Servers](concepts/gcp_mcp_servers_catalog.md) | `Tool` | Complete endpoint catalog and step-by-step connection guide for Google Cloud Native Integrated (Remote) MCP Servers (BigQuery, Spanner, AlloyDB, Cloud SQL, Firestore, Cloud Run, GKE, Logging) and Local CLI MCP Servers. | mcp, remote-mcp, bigquery-mcp, spanner-mcp, cloud-run-mcp, gcloud-mcp, developer-knowledge, adk-docs |
 | [Security, FinOps & Quota Guardrails for Hackathons](concepts/security_finops_and_quotas.md) | `Guide` | Essential hackathon survival guide for avoiding 429 RESOURCE_EXHAUSTED quota errors on Vertex AI, managing third-party secrets in Secret Manager, protecting agents with Model Armor, and keeping GCP costs under control. | quotas, 429, global-endpoint, secret-manager, model-armor, finops, security, iam |
 
 ---

@@ -192,11 +192,6 @@ An MCP server that allows compatible AI agents to interact with and manage Googl
 
 **Source:** [https://github.com/GoogleCloudPlatform/gke-mcp](https://github.com/GoogleCloudPlatform/gke-mcp)
 
-### MCP Toolbox for Databases (GenAI Toolbox)
-An open-source MCP server from Google that provides parameterized, ADC-authenticated tools for AI agents to query Cloud SQL, AlloyDB, Spanner, BigQuery, and Firestore.
-
-**Source:** [https://github.com/googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox)
-
 ### gcloud MCP
 An MCP server that exposes the functionality of the Google Cloud CLI (`gcloud`), allowing AI agents to inspect and manage Google Cloud resources directly.
 
@@ -204,26 +199,40 @@ An MCP server that exposes the functionality of the Google Cloud CLI (`gcloud`),
 
 ---
 
-## 7. Google Cloud Remote MCP Servers
-Google Cloud provides hosted remote MCP servers (`roles/mcp.toolUser`) that allow AI agents to securely interact with cloud resources without running a local server instance. Supported products include:
+## 7. Google Cloud Native Integrated (Remote) MCP Servers
 
-- AlloyDB for PostgreSQL
-- BigQuery
-- Bigtable
-- Cloud Run
-- Customer Experience Agent Studio
-- Cloud SQL
-- Cloud Logging
-- Cloud Monitoring
-- Compute Engine
-- Firestore
-- GKE
-- Google Security Operations
-- Managed Service for Apache Kafka
-- Resource Manager
-- Spanner
-- Vertex AI Search
-- Developer Knowledge API
-- Maps Grounding Lite
+### Managed Google Cloud Remote MCP Endpoints
+Google Cloud provides native, fully managed remote MCP servers hosted directly on each service's HTTP endpoint (`https://<service>.googleapis.com/mcp`) using Streamable HTTP transport and Google Cloud IAM (`roles/mcp.toolUser`), eliminating the need to self-host database or infrastructure MCP middleware. Supported products and endpoints include:
 
-**Source:** [https://docs.cloud.google.com/mcp/supported-products](https://docs.cloud.google.com/mcp/supported-products)
+- **BigQuery:** `https://bigquery.googleapis.com/mcp`
+- **Spanner (Relational & Spanner Graph):** `https://spanner.googleapis.com/mcp`
+- **AlloyDB for PostgreSQL:** `https://alloydb.googleapis.com/mcp`
+- **Cloud SQL (PostgreSQL, MySQL, SQL Server):** `https://sqladmin.googleapis.com/mcp`
+- **Firestore:** `https://firestore.googleapis.com/mcp`
+- **Bigtable:** `https://bigtableadmin.googleapis.com/mcp`
+- **Cloud Storage (GCS):** `https://storage.googleapis.com/storage/mcp`
+- **Cloud Run:** `https://run.googleapis.com/mcp`
+- **Google Kubernetes Engine (GKE):** `https://container.googleapis.com/mcp`
+- **Compute Engine:** `https://compute.googleapis.com/mcp`
+- **Cloud Logging, Monitoring & Trace:** `https://logging.googleapis.com/mcp`, `https://monitoring.googleapis.com/mcp`, `https://cloudtrace.googleapis.com/mcp`
+- **Pub/Sub & Managed Kafka:** `https://pubsub.googleapis.com/mcp`, `https://managedkafka.googleapis.com/mcp`
+- **Resource Manager & IAM:** `https://cloudresourcemanager.googleapis.com/mcp`, `https://iam.googleapis.com/mcp`
+- **Gemini Enterprise Agent Platform & Vertex AI Search:** `https://aiplatform.googleapis.com/mcp/generate`, `https://discoveryengine.googleapis.com/mcp`
+- **Customer Experience Agent Studio:** `https://ces.us.rep.googleapis.com/mcp`
+- **Developer Knowledge API & Maps Grounding Lite:** `https://developerknowledge.googleapis.com/mcp`, `https://mapstools.googleapis.com/mcp`
+
+**Source:** [Supported Products & Endpoints](https://docs.cloud.google.com/mcp/supported-products) | [Google Cloud MCP Overview](https://docs.cloud.google.com/mcp/overview) | [Local MCP Catalog & Connection Guide](wiki/concepts/gcp_mcp_servers_catalog.md)
+
+### Connecting to Google Cloud Native Integrated MCP Servers
+To connect Antigravity 2.0, Gemini CLI, or custom ADK agents (`McpToolset`) to any native Google Cloud remote MCP endpoint, enable the target service API, grant `roles/mcp.toolUser`, and pass your Application Default Credentials (ADC) token with the `x-goog-user-project` header:
+
+- **Enable the product API and grant the MCP Tool User role:**
+  ```bash
+  gcloud services enable bigquery.googleapis.com spanner.googleapis.com sqladmin.googleapis.com alloydb.googleapis.com firestore.googleapis.com
+  gcloud projects add-iam-policy-binding "$GOOGLE_CLOUD_PROJECT" \
+    --member="user:$(gcloud config get-value account)" \
+    --role="roles/mcp.toolUser"
+  ```
+- **Authenticate via ADC Headers (`Authorization` + `x-goog-user-project`) or OAuth:** Point your MCP client or ADK `StreamableHTTPConnectionParams` to `https://<service>.googleapis.com/mcp` with `Authorization: Bearer $(gcloud auth application-default print-access-token)` and `x-goog-user-project: $GOOGLE_CLOUD_PROJECT`.
+
+**Source:** [Configure MCP in an AI Application](https://docs.cloud.google.com/mcp/configure-mcp-ai-application) | [Set Up Authentication to MCP Servers](https://docs.cloud.google.com/mcp/set-up-authentication-mcp-servers) | [Enable Supported Products](https://docs.cloud.google.com/mcp/enable-disable-mcp-servers) | [Local Step-by-Step Connection Guide](wiki/concepts/gcp_mcp_servers_catalog.md)

@@ -29,24 +29,38 @@ flowchart LR
 
 ## 1. Model Context Protocol (MCP) in ADK Agents
 
-In [Google ADK 2.0](agent_development_kit_adk_and_skills.md), you connect your agent to any local (`stdio`) or remote (`StreamableHttpConnectionParams` on `/mcp`) MCP server using `McpToolset`:
+In [Google ADK 2.0](agent_development_kit_adk_and_skills.md), you connect your agent to any [Google Cloud Native Integrated Remote MCP Server](gcp_mcp_servers_catalog.md) (`https://<service>.googleapis.com/mcp`, such as `https://bigquery.googleapis.com/mcp` or `https://spanner.googleapis.com/mcp`) or custom Cloud Run MCP endpoint using `McpToolset` and `StreamableHTTPConnectionParams`:
 
 ```python
+import os
+import google.auth
+import google.auth.transport.requests
 from google.adk.agents import LlmAgent
 from google.adk.tools.mcp_tool import McpToolset, StreamableHTTPConnectionParams
 
-# Connect an ADK agent to a remote MCP server hosted on Cloud Run or GCP
-mcp_tools = McpToolset(
+# Authenticate via Application Default Credentials (requires roles/mcp.toolUser)
+credentials, project_id = google.auth.default(
+    scopes=["https://www.googleapis.com/auth/cloud-platform"]
+)
+credentials.refresh(google.auth.transport.requests.Request())
+quota_project = os.environ.get("GOOGLE_CLOUD_PROJECT", project_id)
+
+# Connect directly to the native Google Cloud BigQuery Remote MCP Server
+bigquery_mcp = McpToolset(
     connection_params=StreamableHTTPConnectionParams(
-        url="https://my-mcp-server-xyz.a.run.app/mcp",
+        url="https://bigquery.googleapis.com/mcp",
+        headers={
+            "Authorization": f"Bearer {credentials.token}",
+            "x-goog-user-project": quota_project,
+        },
     )
 )
 
 root_agent = LlmAgent(
     name="cloud_ops_agent",
     model="gemini-3.8-flash",
-    instruction="Use your MCP tools to inspect and manage cloud resources.",
-    tools=[mcp_tools],
+    instruction="Use your native Google Cloud MCP tools to inspect datasets and run queries.",
+    tools=[bigquery_mcp],
 )
 ```
 
