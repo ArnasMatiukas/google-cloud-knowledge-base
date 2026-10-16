@@ -86,7 +86,7 @@ If your hackathon project is configured with Gemini Enterprise AI Developer Tool
 ## 3. Out-of-the-Box Workspace Skills (`.agents/skills/`) & MCPs
 
 ### Why This Repo Uses `.agents/skills/` Instead of `.gemini/`
-Antigravity 2.0's workspace customization loader automatically scans `.agents/skills/<skill-name>/SKILL.md` (as well as root `GEMINI.md` and `AGENTS.md`) and ignores legacy `<workspace>/.gemini/skills/` directories.
+Antigravity 2.0's workspace customization loader automatically scans `.agents/skills/<skill-name>/SKILL.md` and root `AGENTS.md`, while ignoring legacy `<workspace>/.gemini/skills/` directories.
 
 When you open `google-cloud-knowledge-base` in Antigravity 2.0, all **8 workspace skills** in `.agents/skills/` load automatically out of the box with zero manual configuration:
 - `llm-wiki-search` — Progressive disclosure search across this `wiki/` knowledge base.
