@@ -1,0 +1,18 @@
+# Environment & Secrets (Never commit .env or service account keys)
+.env
+.env.*
+!.env.example
+*service-account*.json
+*credentials*.json
+
+# Python & Node artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.adk/
+
+# OS / Editor files
+.DS_Store
+*.swp

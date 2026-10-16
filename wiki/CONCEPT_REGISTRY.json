@@ -1,0 +1,429 @@
+{
+  "version": "0.2",
+  "concepts": {
+    "agent_development_kit_adk_and_skills": {
+      "slug": "agent_development_kit_adk_and_skills",
+      "title": "Agent Development Kit (ADK 2.0) & Official ADK Skills",
+      "type": "Guide",
+      "category": "3. Agentic Frameworks",
+      "tags": [
+        "adk",
+        "agents",
+        "skills",
+        "skill-toolset",
+        "google-agents-cli",
+        "llms-txt",
+        "multi-agent"
+      ],
+      "description": "Complete guide to Google's Agent Development Kit (ADK 2.0) on Vertex AI: LlmAgent, workflow orchestrators, where to find and install official ADK coding skills (google-agents-cli, adk.dev/llms.txt), and runtime SkillToolset.",
+      "aliases": [
+        "Google ADK",
+        "ADK 2.0",
+        "ADK Skills",
+        "SkillToolset",
+        "google-agents-cli"
+      ],
+      "resource": "https://adk.dev/",
+      "path": "concepts/agent_development_kit_adk_and_skills.md",
+      "rel_path": "concepts/agent_development_kit_adk_and_skills.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "agent_platform_models": {
+      "slug": "agent_platform_models",
+      "title": "Agent Platform Latest Models Catalog (Single Model Per Tier)",
+      "type": "Concept",
+      "category": "2. Models & SDKs",
+      "tags": [
+        "models",
+        "gemini-4-argon",
+        "gemini-3-8-flash",
+        "gemini-embedding-2",
+        "gemini-3-8-live",
+        "nano-banana",
+        "omni",
+        "vertex-ai"
+      ],
+      "description": "Authoritative reference of the single latest, most capable Google Cloud Agent Platform (Vertex AI) model for every capability tier: Gemini 4 Argon, Gemini 3.8 Flash, Gemini 3.5 Flash-Lite, Gemini Embedding 2, TTS, Live API, Image, Video, Music, and Gemma 4.",
+      "aliases": [
+        "Vertex AI Models",
+        "Gemini 4 Argon",
+        "Gemini 3.8 Flash",
+        "Latest Gemini Models"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "path": "concepts/agent_platform_models.md",
+      "rel_path": "concepts/agent_platform_models.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "antigravity_2_paygo_and_ide_setup": {
+      "slug": "antigravity_2_paygo_and_ide_setup",
+      "title": "Antigravity 2.0 Pay-As-You-Go (PayGo) & IDE Setup",
+      "type": "Guide",
+      "category": "1. Onboarding & Setup",
+      "tags": [
+        "antigravity",
+        "paygo",
+        "agy",
+        "ide",
+        "skills",
+        "mcp",
+        "gemini-enterprise"
+      ],
+      "description": "How to configure Antigravity 2.0 Desktop App, CLI (agy), and IDE extensions as Pay-As-You-Go with hackathon Google Cloud accounts and pre-created GCP projects, and how .agents/skills/ loads out of the box.",
+      "aliases": [
+        "Antigravity 2.0",
+        "Antigravity PayGo",
+        "agy CLI",
+        "Login with Business"
+      ],
+      "resource": "https://antigravity.google/",
+      "path": "concepts/antigravity_2_paygo_and_ide_setup.md",
+      "rel_path": "concepts/antigravity_2_paygo_and_ide_setup.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "bigquery_ai_and_analytics": {
+      "slug": "bigquery_ai_and_analytics",
+      "title": "Google BigQuery: Serverless Analytics, In-SQL Gemini & Vector Search",
+      "type": "Guide",
+      "category": "5. Data & Analytics",
+      "tags": [
+        "bigquery",
+        "bqml",
+        "ai-generate",
+        "vector-search",
+        "object-tables",
+        "sql",
+        "analytics"
+      ],
+      "description": "How to use Google BigQuery in hackathons for serverless analytics, calling gemini-3.8-flash and gemini-embedding-2 directly inside SQL (AI.GENERATE, ML.GENERATE_EMBEDDING), Object Tables over GCS media, and VECTOR_SEARCH.",
+      "aliases": [
+        "BigQuery",
+        "BigQuery ML",
+        "AI.GENERATE",
+        "BigQuery Vector Search"
+      ],
+      "resource": "https://docs.cloud.google.com/bigquery/docs",
+      "path": "concepts/bigquery_ai_and_analytics.md",
+      "rel_path": "concepts/bigquery_ai_and_analytics.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "cloud_run_serverless_and_gpus": {
+      "slug": "cloud_run_serverless_and_gpus",
+      "title": "Google Cloud Run: Serverless Containers, Agents & GPUs",
+      "type": "Guide",
+      "category": "4. Compute & Hosting",
+      "tags": [
+        "cloud-run",
+        "serverless",
+        "containers",
+        "gpu",
+        "gemma-4",
+        "oidc",
+        "jobs",
+        "deployment"
+      ],
+      "description": "Rapidly deploying web frontends, FastAPI backends, ADK 2.0 agents, remote MCP servers, and GPU-accelerated Gemma 4 open-weight models on Google Cloud Run.",
+      "aliases": [
+        "Cloud Run",
+        "Cloud Run GPUs",
+        "gcloud run deploy",
+        "Cloud Run Jobs"
+      ],
+      "resource": "https://docs.cloud.google.com/run/docs",
+      "path": "concepts/cloud_run_serverless_and_gpus.md",
+      "rel_path": "concepts/cloud_run_serverless_and_gpus.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "datastores_cloudsql_alloydb_spanner_firestore_gcs": {
+      "slug": "datastores_cloudsql_alloydb_spanner_firestore_gcs",
+      "title": "Operational Data Stores: Spanner Graph, AlloyDB, Cloud SQL, Firestore & GCS",
+      "type": "Concept",
+      "category": "5. Data & Analytics",
+      "tags": [
+        "spanner",
+        "alloydb",
+        "cloud-sql",
+        "pgvector",
+        "firestore",
+        "gcs",
+        "storage",
+        "databases"
+      ],
+      "description": "Decision matrix and quick-start patterns for choosing the right Google Cloud operational database or storage service in hackathons: Cloud Spanner Graph, AlloyDB AI, Cloud SQL for PostgreSQL (pgvector), Firestore, and Cloud Storage (GCS).",
+      "aliases": [
+        "GCP Data Stores",
+        "Cloud SQL pgvector",
+        "AlloyDB AI",
+        "Firestore",
+        "Cloud Storage"
+      ],
+      "resource": "https://docs.cloud.google.com/firestore/native/docs",
+      "path": "concepts/datastores_cloudsql_alloydb_spanner_firestore_gcs.md",
+      "rel_path": "concepts/datastores_cloudsql_alloydb_spanner_firestore_gcs.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "gcp_cli_and_project_setup": {
+      "slug": "gcp_cli_and_project_setup",
+      "title": "Google Cloud CLI & Project Access Setup",
+      "type": "Guide",
+      "category": "1. Onboarding & Setup",
+      "tags": [
+        "gcloud",
+        "cli",
+        "adc",
+        "authentication",
+        "iam",
+        "quota-project",
+        "onboarding"
+      ],
+      "description": "Step-by-step 5-minute guide for hackathon and workshop attendees to authenticate gcloud CLI, configure Application Default Credentials (ADC), bind a pre-created GCP project, and enable core Agent Platform APIs.",
+      "aliases": [
+        "GCP CLI Setup",
+        "ADC Setup",
+        "gcloud auth",
+        "Project Bootstrap"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "path": "concepts/gcp_cli_and_project_setup.md",
+      "rel_path": "concepts/gcp_cli_and_project_setup.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "gcp_mcp_servers_catalog": {
+      "slug": "gcp_mcp_servers_catalog",
+      "title": "Google Cloud MCP Servers Catalog (Local & Remote)",
+      "type": "Tool",
+      "category": "8. MCP & Guardrails",
+      "tags": [
+        "mcp",
+        "cloud-run-mcp",
+        "gcloud-mcp",
+        "mcp-toolbox",
+        "developer-knowledge",
+        "remote-mcp",
+        "adk-docs"
+      ],
+      "description": "Complete catalog and configuration guide for Google Cloud Local MCP Servers (cloud-run-mcp, gcloud-mcp, gke-mcp, mcp-toolbox), Official ADK Docs MCP, and Google Cloud Hosted Remote MCP Servers.",
+      "aliases": [
+        "Google Cloud MCP",
+        "Remote MCP Servers",
+        "MCP Toolbox",
+        "cloud-run-mcp"
+      ],
+      "resource": "https://docs.cloud.google.com/mcp/supported-products",
+      "path": "concepts/gcp_mcp_servers_catalog.md",
+      "rel_path": "concepts/gcp_mcp_servers_catalog.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "gemini_embedding_2_multimodal": {
+      "slug": "gemini_embedding_2_multimodal",
+      "title": "Gemini Embedding 2 (Multimodal Embeddings)",
+      "type": "Guide",
+      "category": "2. Models & SDKs",
+      "tags": [
+        "gemini-embedding-2",
+        "embeddings",
+        "multimodal",
+        "rag",
+        "graphrag",
+        "matryoshka",
+        "vector-search"
+      ],
+      "description": "Complete guide to gemini-embedding-2 on Google Cloud Agent Platform: unified multimodal embeddings across text, images, audio, video, and PDFs (8,192 tokens), Matryoshka dimensionality, and task-specific optimization.",
+      "aliases": [
+        "gemini-embedding-2",
+        "Multimodal Embeddings",
+        "Vertex AI Embeddings"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/embeddings",
+      "path": "concepts/gemini_embedding_2_multimodal.md",
+      "rel_path": "concepts/gemini_embedding_2_multimodal.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "google_genai_sdk_vertex": {
+      "slug": "google_genai_sdk_vertex",
+      "title": "Google GenAI SDK on Vertex AI",
+      "type": "Guide",
+      "category": "2. Models & SDKs",
+      "tags": [
+        "google-genai",
+        "python",
+        "sdk",
+        "vertex-ai",
+        "structured-outputs",
+        "function-calling",
+        "caching"
+      ],
+      "description": "How to use the unified google-genai SDK in Google Cloud Agent Platform (Vertex AI) mode for text generation, Pydantic structured outputs, function calling, GCS multimodal inputs, and context caching.",
+      "aliases": [
+        "google-genai",
+        "GenAI SDK",
+        "vertexai=True"
+      ],
+      "resource": "https://github.com/googleapis/python-genai",
+      "path": "concepts/google_genai_sdk_vertex.md",
+      "rel_path": "concepts/google_genai_sdk_vertex.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "graphrag_architectures_on_gcp": {
+      "slug": "graphrag_architectures_on_gcp",
+      "title": "How to Build GraphRAGs on Google Cloud",
+      "type": "Architecture",
+      "category": "6. RAG & Knowledge",
+      "tags": [
+        "graphrag",
+        "spanner-graph",
+        "alloydb",
+        "pgvector",
+        "bigquery",
+        "gemini-embedding-2",
+        "knowledge-graph"
+      ],
+      "description": "Complete architectural blueprint and implementation guide for building GraphRAG (Graph Retrieval-Augmented Generation) on Google Cloud using gemini-3.8-flash entity extraction, gemini-embedding-2 multimodal vectors, and 4 storage options: Cloud Spanner Graph, AlloyDB/Cloud SQL pgvector + AGE, BigQuery GraphRAG, and rapid NetworkX/OKF Wiki graphs.",
+      "aliases": [
+        "GraphRAG",
+        "Spanner GraphRAG",
+        "Knowledge Graph RAG",
+        "Property Graph RAG"
+      ],
+      "resource": "https://docs.cloud.google.com/spanner/docs/graph/overview",
+      "path": "concepts/graphrag_architectures_on_gcp.md",
+      "rel_path": "concepts/graphrag_architectures_on_gcp.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "multimodal_live_voice_and_media": {
+      "slug": "multimodal_live_voice_and_media",
+      "title": "Multimodal Live API, Voice (TTS/ASR), Image & Video Generation",
+      "type": "Guide",
+      "category": "7. Multimodal & Live",
+      "tags": [
+        "live-api",
+        "gemini-3-8-live",
+        "tts",
+        "asr",
+        "nano-banana",
+        "omni",
+        "lyria",
+        "multimodal",
+        "voice"
+      ],
+      "description": "How to build real-time voice, video, image, and music experiences on Google Cloud Agent Platform using only the latest models per tier: gemini-3.8-live, gemini-3.8-flash-tts, gemini-3.5-transcribe-live, gemini-nano-banana-2.1, gemini-omni-1.1-flash, and lyria-3.5.",
+      "aliases": [
+        "Gemini Live API",
+        "Gemini 3.8 Live",
+        "Nano Banana 2.1",
+        "Gemini Omni 1.1 Flash",
+        "Gemini TTS"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-live",
+      "path": "concepts/multimodal_live_voice_and_media.md",
+      "rel_path": "concepts/multimodal_live_voice_and_media.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "protocols_mcp_and_a2a": {
+      "slug": "protocols_mcp_and_a2a",
+      "title": "Agentic Protocols: MCP & A2A",
+      "type": "Concept",
+      "category": "3. Agentic Frameworks",
+      "tags": [
+        "mcp",
+        "a2a",
+        "agent2agent",
+        "protocols",
+        "interoperability",
+        "adk",
+        "streamable-http"
+      ],
+      "description": "How Model Context Protocol (MCP) and the Agent2Agent (A2A) protocol work together on Google Cloud to connect agents to tools, databases, and remote specialist agents.",
+      "aliases": [
+        "Model Context Protocol",
+        "Agent2Agent Protocol",
+        "A2A",
+        "MCP vs A2A"
+      ],
+      "resource": "https://github.com/a2aproject/A2A",
+      "path": "concepts/protocols_mcp_and_a2a.md",
+      "rel_path": "concepts/protocols_mcp_and_a2a.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "rag_grounding_and_search": {
+      "slug": "rag_grounding_and_search",
+      "title": "RAG, Grounding & Search on Google Cloud",
+      "type": "Architecture",
+      "category": "6. RAG & Knowledge",
+      "tags": [
+        "rag",
+        "grounding",
+        "google-search",
+        "google-maps",
+        "vertex-ai-search",
+        "gemini-embedding-2",
+        "okf-wiki"
+      ],
+      "description": "Complete decision framework and implementation guide for Grounding and Retrieval-Augmented Generation (RAG) on Google Cloud: OKF LLM Wiki, Google Search & Maps Grounding, Vertex AI Search, Multimodal Vector RAG, and GraphRAG.",
+      "aliases": [
+        "RAG on GCP",
+        "Grounding with Google Search",
+        "Maps Grounding",
+        "Vertex AI Search"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "path": "concepts/rag_grounding_and_search.md",
+      "rel_path": "concepts/rag_grounding_and_search.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "security_finops_and_quotas": {
+      "slug": "security_finops_and_quotas",
+      "title": "Security, FinOps & Quota Guardrails for Hackathons",
+      "type": "Guide",
+      "category": "8. MCP & Guardrails",
+      "tags": [
+        "quotas",
+        "429",
+        "global-endpoint",
+        "secret-manager",
+        "model-armor",
+        "finops",
+        "security",
+        "iam"
+      ],
+      "description": "Essential hackathon survival guide for avoiding 429 RESOURCE_EXHAUSTED quota errors on Vertex AI, managing third-party secrets in Secret Manager, protecting agents with Model Armor, and keeping GCP costs under control.",
+      "aliases": [
+        "Vertex AI Quotas",
+        "429 RESOURCE_EXHAUSTED",
+        "Secret Manager",
+        "Hackathon Guardrails"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "path": "concepts/security_finops_and_quotas.md",
+      "rel_path": "concepts/security_finops_and_quotas.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    },
+    "vertex_ai_agent_engine": {
+      "slug": "vertex_ai_agent_engine",
+      "title": "Vertex AI Agent Engine (Managed Agent Runtime)",
+      "type": "Architecture",
+      "category": "3. Agentic Frameworks",
+      "tags": [
+        "agent-engine",
+        "reasoning-engine",
+        "vertex-ai",
+        "sessions",
+        "memory-bank",
+        "opentelemetry",
+        "adk"
+      ],
+      "description": "Deploying and scaling ADK and custom agents on Google Cloud's managed Vertex AI Agent Engine (ReasoningEngine) with managed Sessions, long-term Memory Bank, Code Execution Sandbox, and Cloud Trace.",
+      "aliases": [
+        "Vertex AI Agent Engine",
+        "ReasoningEngine",
+        "Agent Runtime",
+        "Memory Bank"
+      ],
+      "resource": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale",
+      "path": "concepts/vertex_ai_agent_engine.md",
+      "rel_path": "concepts/vertex_ai_agent_engine.md",
+      "last_updated": "2026-10-16T10:25:00Z"
+    }
+  },
+  "last_synced": "2026-10-16T10:40:09.898052+00:00"
+}

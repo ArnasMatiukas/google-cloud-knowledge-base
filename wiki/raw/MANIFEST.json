@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "last_sync": "2026-10-16T10:36:23.098289+00:00",
+  "sources": {
+    "google_cloud_hackathon_workshop_curated_knowledge_base_q4_2026.md": {
+      "title": "Google Cloud Hackathon & Workshop Curated Knowledge Base (Q4 2026)",
+      "source": "Google Cloud Hackathon & Workshop Curated Knowledge Base (Q4 2026)",
+      "source_type": "raw_text",
+      "category": "Google Cloud",
+      "hash": "8a6fd23d3a302086e02161e43f775eb01faa11c1e3dd5ce2416c43be42e27b13",
+      "ingested_at": "2026-10-16T10:36:23.098289+00:00",
+      "raw_file": "google_cloud_hackathon_workshop_curated_knowledge_base_q4_2026.md"
+    }
+  }
+}

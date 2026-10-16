@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "raw_file": "google_cloud_hackathon_workshop_curated_knowledge_base_q4_2026.md",
+      "title": "Google Cloud Hackathon & Workshop Curated Knowledge Base (Q4 2026)",
+      "category": "Google Cloud",
+      "source_type": "raw_text",
+      "status": "COMPLETED",
+      "enqueued_at": "2026-10-16T10:36:23.098289+00:00",
+      "concept_pages": [
+        "concepts/gcp_mcp_servers_catalog.md",
+        "concepts/security_finops_and_quotas.md",
+        "concepts/vertex_ai_agent_engine.md",
+        "concepts/protocols_mcp_and_a2a.md",
+        "concepts/bigquery_ai_and_analytics.md",
+        "concepts/google_genai_sdk_vertex.md",
+        "concepts/antigravity_2_paygo_and_ide_setup.md",
+        "concepts/gemini_embedding_2_multimodal.md",
+        "concepts/gcp_cli_and_project_setup.md",
+        "concepts/cloud_run_serverless_and_gpus.md",
+        "concepts/rag_grounding_and_search.md",
+        "concepts/multimodal_live_voice_and_media.md",
+        "concepts/datastores_cloudsql_alloydb_spanner_firestore_gcs.md",
+        "concepts/agent_platform_models.md",
+        "concepts/graphrag_architectures_on_gcp.md",
+        "concepts/agent_development_kit_adk_and_skills.md"
+      ],
+      "completed_at": "2026-10-16T10:36:23.196848+00:00"
+    }
+  ],
+  "last_updated": "2026-10-16T10:36:23.098289+00:00"
+}
