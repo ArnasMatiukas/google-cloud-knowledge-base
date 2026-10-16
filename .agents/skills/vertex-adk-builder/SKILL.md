@@ -36,12 +36,12 @@ Use this skill whenever scaffolding, writing, testing, or debugging agents with 
   ```bash
   uvx google-agents-cli setup
   ```
-  This installs Google's official ADK development skills (project scaffolding, evaluation & scoring, Agent Runtime / Cloud Run / GKE deployment, Gemini Enterprise publishing, OpenTelemetry tracing, and Python API quick reference) into Antigravity 2.0, Gemini CLI, Claude Code, or Cursor.
+  This installs Google's official ADK development skills (project scaffolding, evaluation & scoring, Agent Runtime / Cloud Run / GKE deployment, Gemini Enterprise publishing, OpenTelemetry tracing, and Python API quick reference) into Antigravity 2.0, Claude Code, or Cursor.
 - **Official Machine-Readable ADK Docs (`llms.txt`):**
   - Index: `https://adk.dev/llms.txt` (pre-wired in `.agents/mcp_config.json` as `adk-docs-mcp`)
   - Full single-file docs: `https://adk.dev/llms-full.txt`
 - **Community Skill Directories:**
-  - `https://www.skills.sh/` (`npx skills`), `https://github.com/vudovn/ag-kit`, `https://github.com/nth5693/gemini-kit`.
+  - `https://www.skills.sh/` (`npx skills`), `https://github.com/vudovn/ag-kit`.
 
 ### B. Runtime Skills Inside Your Own ADK Agents (`SkillToolset`)
 ADK agents can dynamically load `SKILL.md` directories at runtime using progressive disclosure ([https://adk.dev/skills/](https://adk.dev/skills/)):

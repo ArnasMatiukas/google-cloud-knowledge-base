@@ -12,7 +12,7 @@ status: "active"
 
 # Google Cloud Native Integrated & Local MCP Servers
 
-Google Cloud natively integrates **managed Remote Model Context Protocol (MCP) endpoints** (`https://<service>.googleapis.com/mcp`) directly into its managed services ([Official Overview](https://docs.cloud.google.com/mcp/overview)). Instead of deploying or maintaining separate database/service MCP middleware, your coding agents ([Antigravity 2.0](antigravity_2_paygo_and_ide_setup.md), Gemini CLI) and runtime [ADK 2.0 agents](agent_development_kit_adk_and_skills.md) can connect directly over **Streamable HTTP** governed by Google Cloud IAM.
+Google Cloud natively integrates **managed Remote Model Context Protocol (MCP) endpoints** (`https://<service>.googleapis.com/mcp`) directly into its managed services ([Official Overview](https://docs.cloud.google.com/mcp/overview)). Instead of deploying or maintaining separate database/service MCP middleware, your coding agents ([Antigravity 2.0](antigravity_2_paygo_and_ide_setup.md)) and runtime [ADK 2.0 agents](agent_development_kit_adk_and_skills.md) can connect directly over **Streamable HTTP** governed by Google Cloud IAM.
 
 ---
 
@@ -79,7 +79,7 @@ gcloud projects add-iam-policy-binding "$GOOGLE_CLOUD_PROJECT" \
 > [!TIP]
 > **Service Accounts for Deployed Agents:** When running an agent on [Cloud Run](cloud_run_serverless_and_gpus.md) or [Vertex AI Agent Engine](vertex_ai_agent_engine.md), bind `roles/mcp.toolUser` to the agent's runtime service account (`--member="serviceAccount:AGENT_SA_EMAIL"`).
 
-### Step 3: Connect Your Coding Agent (Antigravity 2.0 / IDE / Gemini CLI)
+### Step 3: Connect Your Coding Agent (Antigravity 2.0 / IDE)
 
 #### Option A: Antigravity 2.0 / VS Code via Application Default Credentials (ADC) Bearer Header
 Generate an ADC access token (or extend its lifetime up to 12 hours if supported by your org policy) and pass `Authorization: Bearer <TOKEN>` alongside `x-goog-user-project`:
@@ -124,27 +124,6 @@ If you prefer automatic token refresh in Antigravity 2.0 ([Set Up Authentication
         "clientSecret": "${MY_OAUTH_CLIENT_SECRET}",
         "scopes": ["https://www.googleapis.com/auth/cloud-platform"],
         "callbackPort": "https://antigravity.google/oauth-callback"
-      }
-    }
-  }
-}
-```
-
-#### Option C: Native `google_credentials` Extension (`~/.gemini/extensions/<name>/gemini-extension.json`)
-```json
-{
-  "name": "gcp-native-mcp",
-  "version": "1.0.0",
-  "mcpServers": {
-    "bigquery": {
-      "httpUrl": "https://bigquery.googleapis.com/mcp",
-      "authProviderType": "google_credentials",
-      "oauth": {
-        "scopes": ["https://www.googleapis.com/auth/bigquery"]
-      },
-      "timeout": 30000,
-      "headers": {
-        "x-goog-user-project": "your-hackathon-project-id"
       }
     }
   }

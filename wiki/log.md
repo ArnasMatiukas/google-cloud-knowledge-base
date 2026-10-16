@@ -12,7 +12,7 @@ Chronological history of knowledge additions, updates, and distillations.
 - Concept page: `[concepts/graphrag_architectures_on_gcp.md](concepts/graphrag_architectures_on_gcp.md)`
 
 ### [2026-10-16 11:54:31 UTC] Native Integrated GCP MCP Endpoints
-- Added comprehensive documentation and connection instructions for Google Cloud Native Integrated (Remote) MCP endpoints (`https://<service>.googleapis.com/mcp`) across Antigravity 2.0, Gemini CLI, and ADK `McpToolset`.
+- Added comprehensive documentation and connection instructions for Google Cloud Native Integrated (Remote) MCP endpoints (`https://<service>.googleapis.com/mcp`) across Antigravity 2.0 and ADK `McpToolset`.
 - Concept page: `[concepts/gcp_mcp_servers_catalog.md](concepts/gcp_mcp_servers_catalog.md)`
 - Concept page: `[concepts/protocols_mcp_and_a2a.md](concepts/protocols_mcp_and_a2a.md)`
 

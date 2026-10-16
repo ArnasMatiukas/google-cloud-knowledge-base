@@ -77,11 +77,6 @@ Antigravity 2.0 is Google's agentic software engineering platform (Desktop Hub, 
 
 **Source:** [Official Website](https://antigravity.google/) | [Download](https://antigravity.google/download) | [Local PayGo Setup Guide](wiki/concepts/antigravity_2_paygo_and_ide_setup.md)
 
-### Gemini CLI
-Gemini CLI is an interactive command-line interface agent specializing in software engineering tasks, enabling developers to write code, execute commands, and manage Google Cloud projects directly from the terminal.
-
-**Source:** [GitHub Repository](https://github.com/google-gemini/gemini-cli) | [Web Version](https://geminicli.com/)
-
 ### Google Cloud Agent Platform Models (Latest Model Per Tier)
 Google Cloud Agent Platform (Vertex AI) provides enterprise access to Google's latest frontier models via the `global` endpoint. Use only the single latest model of each tier so your team never has to guess which model ID is most capable:
 
@@ -110,7 +105,7 @@ Gemini Embedding 2 is Google Cloud's native multimodal embedding model that maps
 **Source:** [Official Documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/embeddings) | [Local Multimodal Embeddings Guide](wiki/concepts/gemini_embedding_2_multimodal.md)
 
 ### Agent Development Kit (ADK 2.0) & Official ADK Skills
-The Agent Development Kit (ADK) is Google's framework for building, evaluating, and deploying multi-agent systems. You can install official ADK coding skills into Antigravity 2.0 or Gemini CLI via `uvx google-agents-cli setup`, connect to `https://adk.dev/llms.txt`, and equip runtime agents with modular `SKILL.md` folders via `SkillToolset`.
+The Agent Development Kit (ADK) is Google's framework for building, evaluating, and deploying multi-agent systems. You can install official ADK coding skills into Antigravity 2.0 via `uvx google-agents-cli setup`, connect to `https://adk.dev/llms.txt`, and equip runtime agents with modular `SKILL.md` folders via `SkillToolset`.
 
 **Source:** [Official Website](https://adk.dev/) | [Coding with AI & ADK CLI Skills](https://adk.dev/tutorials/coding-with-ai/) | [Runtime Skills for ADK Agents](https://adk.dev/skills/) | [Agents CLI](https://google.github.io/agents-cli/) | [ADK Python](https://github.com/google/adk-python) | [ADK Recipes](https://github.com/google/adk-recipes)
 
@@ -168,16 +163,6 @@ A community template toolkit providing ready-to-use skills, agents, and workflow
 
 **Source:** [https://github.com/vudovn/ag-kit](https://github.com/vudovn/ag-kit)
 
-### Gemini Kit
-An extension kit tailored for Gemini CLI featuring pre-configured agents and commands for automated planning, testing, and security reviews.
-
-**Source:** [https://github.com/nth5693/gemini-kit](https://github.com/nth5693/gemini-kit)
-
-### Gemini CLI Workspace Extension
-A dedicated extension for Gemini CLI that leverages a local MCP server to query and interact with Google Workspace data such as emails, docs, and calendars.
-
-**Source:** [https://github.com/gemini-cli-extensions/workspace](https://github.com/gemini-cli-extensions/workspace)
-
 ---
 
 ## 6. Google Cloud Local MCP Servers
@@ -224,7 +209,7 @@ Google Cloud provides native, fully managed remote MCP servers hosted directly o
 **Source:** [Supported Products & Endpoints](https://docs.cloud.google.com/mcp/supported-products) | [Google Cloud MCP Overview](https://docs.cloud.google.com/mcp/overview) | [Local MCP Catalog & Connection Guide](wiki/concepts/gcp_mcp_servers_catalog.md)
 
 ### Connecting to Google Cloud Native Integrated MCP Servers
-To connect Antigravity 2.0, Gemini CLI, or custom ADK agents (`McpToolset`) to any native Google Cloud remote MCP endpoint, enable the target service API, grant `roles/mcp.toolUser`, and pass your Application Default Credentials (ADC) token with the `x-goog-user-project` header:
+To connect Antigravity 2.0 or custom ADK agents (`McpToolset`) to any native Google Cloud remote MCP endpoint, enable the target service API, grant `roles/mcp.toolUser`, and pass your Application Default Credentials (ADC) token with the `x-goog-user-project` header:
 
 - **Enable the product API and grant the MCP Tool User role:**
   ```bash

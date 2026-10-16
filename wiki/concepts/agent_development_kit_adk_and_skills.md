@@ -26,7 +26,7 @@ There are **two distinct layers of ADK Skills** that every hackathon team should
 ### Layer A: Official ADK Skills for Your AI Coding Assistant (`Code with AI`)
 **Official Guide:** [https://adk.dev/tutorials/coding-with-ai/](https://adk.dev/tutorials/coding-with-ai/)
 
-To give your coding agent ([Antigravity 2.0](antigravity_2_paygo_and_ide_setup.md), Gemini CLI, Claude Code, or Cursor) deep expertise in ADK 2.0 so it never hallucinates outdated APIs:
+To give your coding agent ([Antigravity 2.0](antigravity_2_paygo_and_ide_setup.md), Claude Code, or Cursor) deep expertise in ADK 2.0 so it never hallucinates outdated APIs:
 
 1. **Google Agents CLI (`google-agents-cli`):**
    - **Official Docs:** [https://google.github.io/agents-cli/](https://google.github.io/agents-cli/)
@@ -66,7 +66,6 @@ To give your coding agent ([Antigravity 2.0](antigravity_2_paygo_and_ide_setup.m
 4. **Community & Ecosystem Skill Directories:**
    - [Skills.sh Gallery](https://www.skills.sh/) (`npx skills`)
    - [Antigravity Kit (AG-Kit)](https://github.com/vudovn/ag-kit)
-   - [Gemini Kit](https://github.com/nth5693/gemini-kit)
 
 ---
 
